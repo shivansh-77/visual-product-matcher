@@ -1,0 +1,10 @@
+/* Basic styles + loading overlay */
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.75);
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
