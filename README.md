@@ -36,3 +36,4 @@ Flask, SQLite, Pillow, ImageHash, Bootstrap.
 
 ## Approach (≤200 words)
 We index each product image with a perceptual hash (pHash), which captures visual structure. At query time (upload or URL), we compute the pHash of the input image and compare it to product hashes using Hamming distance. We convert distance to a 0–100 similarity score and sort the results. The product database (60 items) is stored in SQLite with names, categories, prices, and image URLs. The UI is built with Flask templates and Bootstrap, with a responsive grid, loading overlay during processing, and both server- and client-side score filtering for a smooth UX. This approach avoids heavy ML dependencies, deploys easily on free hosting, and remains accurate enough for a small catalog.
+# visual-product-matcher
